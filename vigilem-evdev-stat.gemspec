@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'vigilem-evdev-stat'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.summary       = 'Stat(us) for whether or not Evdev is available'
   spec.description   = 'Stat(us) for whether or not Evdev is available'
   spec.authors       = ['jtzero']
@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   
   spec.add_dependency 'vigilem-core'
+  spec.add_dependency 'vigilem-dom'
   
   spec.add_development_dependency 'yard'
   spec.add_development_dependency 'bundler', '~> 1.7'
@@ -20,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'turnip'
   spec.add_development_dependency 'guard-rspec'
   
-  spec.files         = Dir['{lib,spec,ext,test,features,bin}/**/**']
+  spec.files         = Dir['{lib,spec,ext,test,features,bin}/**/**'] + ["License.txt"]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
