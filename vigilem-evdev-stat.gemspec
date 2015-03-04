@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'vigilem-evdev-stat'
-  spec.version       = '0.0.2'
+  spec.version       = '0.0.3'
   spec.summary       = 'Stat(us) for whether or not Evdev is available'
   spec.description   = 'Stat(us) for whether or not Evdev is available'
   spec.authors       = ['jtzero']
@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   
   spec.add_dependency 'vigilem-core'
   spec.add_dependency 'vigilem-dom'
+  spec.add_dependency 'vigilem-x11-stat'
   
   spec.add_development_dependency 'yard'
   spec.add_development_dependency 'bundler', '~> 1.7'
