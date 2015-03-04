@@ -1,0 +1,3 @@
+syntax: glob
+pkg/vigilem-evdev-stat-*.gem
+Gemfile.lock
